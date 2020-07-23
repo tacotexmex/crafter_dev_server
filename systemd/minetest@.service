@@ -1,0 +1,12 @@
+[Unit]
+Description=Minetest server
+After=syslog.target network.target
+
+[Service]
+Type=simple
+Restart=always
+ExecStart=/usr/bin/minetest --server --world /home/deploy/.minetest/worlds/%i --gameid %i --config --config /home/deploy/.minetest/games/%i/minetest.conf --config /home/deploy/.minetest/%i.conf --logfile /home/deploy/.minetest/logs/%i.log
+
+[Install]
+WantedBy=default.target
+

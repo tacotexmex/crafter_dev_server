@@ -1,0 +1,7 @@
+day_count = 3482
+lbm_introduction_times = sign:convert_widefont_signs~0;:mob_spawners:big_slime~1191482;:mob_spawners:chicken~1191482;:mob_spawners:creeper~1191482;:mob_spawners:medium_slime~1191482;:mob_spawners:nitro_creeper~1191482;:mob_spawners:phyg~1191482;:mob_spawners:pig~1191482;:mob_spawners:sheep~1191482;:mob_spawners:small_slime~1191482;:mob_spawners:sneeper~1191482;:mob_spawners:snoider~1191482;:mob_spawners:snowman~1191482;:mob_spawners:spider~1191482;:mob_spawners:zombie~1272186;
+lbm_introduction_times_version = 1
+last_clear_objects_time = 2577130
+time_of_day = 3712
+game_time = 4096793
+EnvArgsEnd

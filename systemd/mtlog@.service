@@ -1,0 +1,12 @@
+[Unit]
+Description=Minetest logging
+After=syslog.target network.target
+
+[Service]
+Type=simple
+Restart=on-failure
+WorkingDirectory=/home/deploy/.minetest/logs
+ExecStart=/bin/sh -c 'while true ; do echo "$(tail -n -50 crafter.log)" > crafter.log; cat crafter.log | ccze -A -h > crafter.html; sleep 1; done'
+
+[Install]
+WantedBy=default.target

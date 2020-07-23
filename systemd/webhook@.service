@@ -1,0 +1,11 @@
+[Unit]
+Description=Webhookd server
+After=syslog.target network.target
+
+[Service]
+Type=simple
+Restart=on-failure
+ExecStart=/home/deploy/.local/bin/webhookd -scripts /home/deploy/scripts/%i
+
+[Install]
+WantedBy=default.target
