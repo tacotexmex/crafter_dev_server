@@ -22,9 +22,13 @@ Notify server of repo updates via webhook (pull.sh)
 ### Some systemd services
 
 `discordmt@.service`, Discord<->Minetest chat bridge
+
 `log2discord@.service`, posts server crash messages to Discord (bollocks.sh)
+
 `minetest@.service`, keep Minetest server up
+
 `mtlog@.service`, cut and trim log file for http exposure via nginx
+
 `webhook@.service`, keep webhookd running
 
 ### nginx + certbot
